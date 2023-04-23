@@ -41,6 +41,50 @@ nav {
   .nav-links a:hover {
     color: #0066cc;
   }
+  .hidden {
+    display: none;
+  }
+  .menu-icon {
+    display: none;
+  }
+
+  @media screen and (max-width: 767px) {
+    
+    .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    }
+    .nav-links li {
+    margin: 10px 0;
+    width: 100%;
+    }
+    .nav-links a {
+    font-size: 16px;
+    font-weight: normal;
+    text-align: left;
+    margin-left: 0;
+    }
+    .logo a {
+    font-size: 20px;
+    }
+    .menu-icon {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+    text-align: right;
+    margin-right: 20px;
+    }
+    .menu-icon:hover {
+    color: #0066cc;
+    }
+    #nav:checked ~ .nav-links {
+    display: block;
+    }
+  }
 
   .background-image {
     background-image: url("1.jpg");
